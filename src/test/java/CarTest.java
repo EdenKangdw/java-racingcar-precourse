@@ -8,7 +8,7 @@ public class CarTest {
     static Car car;
 
     @BeforeAll
-    static void makeSampleCar(){
+    static void 기본_자동차_생성(){
         car = new Car("sample");
     }
 
@@ -38,5 +38,17 @@ public class CarTest {
         car.randomValue = 2;
         car.checkCarGo();
         Assertions.assertThat(car.goCount).isEqualTo(1);
+    }
+
+    @Test
+    void 자동차_게임_결과_출력값_검증_테스트() {
+        car.randomValue = 7;
+        car.checkCarGo();
+        String message = car.convertGoCountIntoSign();
+        Assertions.assertThat(message).isEqualTo("ㅇ");
+
+        car.checkCarGo();
+        message = car.convertGoCountIntoSign();
+        Assertions.assertThat(message).isEqualTo("ㅇㅇ");
     }
 }

@@ -21,6 +21,25 @@ public class Car {
         }
     }
 
+    public void makeCarGo(){
+        this.getRandomValue();
+        this.checkCarGo();
+        this.printResult();
+    }
+
+
+    public void printResult(){
+        String resultSign = convertGoCountIntoSign();
+        System.out.println(String.format("%s : %s", this.name, resultSign));
+    }
+
+    public String convertGoCountIntoSign(){
+        String result = "";
+        for (int i = 0; i < this.goCount; i++) {
+            result = result + "ㅇ";
+        }
+        return result;
+    }
 
 
 }
