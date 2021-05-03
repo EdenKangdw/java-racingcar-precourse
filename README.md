@@ -7,17 +7,14 @@
 * [과제 제출 방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
 
 ## 구현계획 
-1. 게임진행 횟수를 입력한다. 
-2. 자동차 이름을 입력받는다
-    - 자동차 이름은 ","로 구분되어야 한다
-2. 자동차 클래스를 만든다.
+1. 자동차 클래스를 만들고 테스트한다. 
     - create : 생성자 - 이름   
     - property : 이름, 전진 횟수, randomValue
     - method : 
         - 랜덤 값 찾기 : 1-9 사이의 값 중, 1개의 숫자를 뽑는다.
         - 전진하기 : randomValue 값 검증, 4이상 전진, 3이하 멈춘다 => x > 3 => 전진     
         - 결과 출력 : 전진횟수만큼 String을 append 하여 출력한다.     
-4. 게임 클래스를 만든다. 
+2. 게임 클래스를 만들고 테스트한다.
     - create : 생성자 - 게임 진행 횟수
     - property : 게임 진행 횟수, 현재 회차 수, 게임 참여 자동차 List
     - method : 
