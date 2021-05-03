@@ -14,4 +14,13 @@ public class Car {
         int randomValue = random.nextInt(10);
         this.randomValue = randomValue;
     }
+
+    public void checkCarGo(){
+        if(this.randomValue > 3){
+            this.goCount++;
+        }
+    }
+
+
+
 }
