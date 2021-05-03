@@ -24,7 +24,7 @@ public class CarTest {
     @DisplayName("자동차 랜덤 값 생성 테스트")
     void 자동차_랜덤_값_생성_1_9_사이_검증_테스트() {
         for (int i = 0; i < 20; i++) {
-            car.getRandomValue();
+            car.makeRandomValue();
             Assertions.assertThat(car.randomValue).isBetween(0,9);
         }
     }

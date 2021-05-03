@@ -9,7 +9,7 @@ public class Car {
         this.name = name;
     }
 
-    public void getRandomValue(){
+    public void makeRandomValue(){
         Random random = new Random();
         int randomValue = random.nextInt(10);
         this.randomValue = randomValue;
@@ -22,7 +22,7 @@ public class Car {
     }
 
     public void makeCarGo(){
-        this.getRandomValue();
+        this.makeRandomValue();
         this.checkCarGo();
         this.printResult();
     }
