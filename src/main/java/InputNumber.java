@@ -11,9 +11,6 @@ public class InputNumber {
         if(!isOverZero(checkInteger(input))){
             return false;
         }
-        if(!isUnderTen(checkInteger(input))){
-            return false;
-        }
         return true;
     }
 
@@ -29,13 +26,6 @@ public class InputNumber {
 
     public boolean isOverZero(int number) {
         if (number > 0) {
-            return true;
-        }
-        return false;
-    }
-
-    public boolean isUnderTen(int number){
-        if(number < 10){
             return true;
         }
         return false;

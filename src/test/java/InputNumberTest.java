@@ -19,9 +19,4 @@ public class InputNumberTest {
         Assertions.assertThat(number.isOverZero(0)).isEqualTo(false);
     }
 
-    @Test
-    void 인풋값_10_미만_테스트() {
-        Assertions.assertThat(number.isUnderTen(1)).isEqualTo(true);
-        Assertions.assertThat(number.isUnderTen(10)).isEqualTo(false);
-    }
 }
