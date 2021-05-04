@@ -19,4 +19,11 @@ public class Game {
         end(cars);
     }
 
+    public void end(Cars cars){
+        System.out.println("===== 게임 종료 =====");
+        System.out.println(String.format("%s 자동차가 최종 승리 하였습니다", cars.getWinnerNames(totalCount.number)));
+    }
+
+
+
 }
