@@ -12,6 +12,19 @@ public class Cars {
         }
     }
 
+    public String getWinnerNames(int totalCount){
+        StringBuilder winnerNames = new StringBuilder();
+        this.checkWinners(totalCount);
+        for (Car car : this.winnerList) {
+            winnerNames.append(" " + car.name + ",");
+        }
+        if(winnerNames.toString().length() == 0){
+            return "Nobody";
+        }
+        winnerNames.setLength(winnerNames.length() - 1);
+
+        return winnerNames.toString();
+    }
 
     public void checkWinners(int winnerCount){
         while (winnerCount > 0 && this.winnerList.size() == 0){

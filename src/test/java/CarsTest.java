@@ -35,5 +35,12 @@ public class CarsTest {
 
     }
 
+    @Test
+    void 승자_이름_출력_테스트() {
+        cars.carList.get(0).goCount = 4;
+        cars.carList.get(1).goCount = 1;
+        cars.carList.get(2).goCount = 4;
 
+        Assertions.assertThat(cars.getWinnerNames(4)).isEqualTo(" 람보르기니, 포르쉐");
+    }
 }
