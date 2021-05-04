@@ -12,6 +12,12 @@ public class Cars {
         }
     }
 
+    public void go(){
+        for(Car car : this.carList){
+            car.makeCarGo();
+        }
+    }
+
     public String getWinnerNames(int totalCount){
         StringBuilder winnerNames = new StringBuilder();
         this.checkWinners(totalCount);
