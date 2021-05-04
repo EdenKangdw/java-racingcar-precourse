@@ -30,7 +30,7 @@ public class Car {
 
     public void printResult(){
         String resultSign = convertGoCountIntoSign();
-        System.out.println(String.format("%s : %s", this.name, resultSign));
+        System.out.println(String.format("%s(%d) : %s", this.name, this.goCount, resultSign));
     }
 
     public String convertGoCountIntoSign(){
