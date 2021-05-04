@@ -13,6 +13,24 @@ public class Cars {
     }
 
 
+    public void checkWinners(int winnerCount){
+        while (winnerCount > 0 && this.winnerList.size() == 0){
+            searchWinner(winnerCount);
+            winnerCount--;
+        }
+    }
+
+    public void searchWinner(int winnerCount){
+        for (Car car : this.carList){
+            addWinner(car, winnerCount);
+        }
+    }
+
+    public void addWinner(Car car, int winnerCount){
+        if(car.goCount == winnerCount){
+            this.winnerList.add(car);
+        }
+    }
 
 
 
