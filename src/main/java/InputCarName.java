@@ -10,8 +10,8 @@ public class InputCarName {
     }
 
     public void makeNameStringArray(String nameString){
-            String [] names = nameString.split(",");
-            checkValidNames(names);
+        String [] names = nameString.split(",");
+        checkValidNames(names);
     }
 
     public void checkValidNames(String [] names){
